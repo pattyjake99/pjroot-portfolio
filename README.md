@@ -38,3 +38,34 @@ To enable the Kinetic Typography video, export/download the original as an MP4, 
 - Added `assets/kinetic-typography.mp4`, converted from the user-supplied screen recording, trimmed to one approximately 3.33-second repetition at 1280×720 H.264.
 - The embedded video now autoplays, loops, plays inline, and is muted to meet browser autoplay restrictions. Viewer can use the controls.
 - Upload the entire assets folder alongside the updated HTML/CSS/JS files. This file does not require Squarespace.
+
+
+## Latest Blender gallery additions
+
+Added two paired finished-render studies (monochrome and violet), one blue-lit character portrait, and two behind-the-scenes character-update screenshots. These are displayed alongside the previous grouped three-image cinematic series and candlelit lighting feature.
+
+
+## The Nightmare series
+
+Three original supplied images were added as a dedicated, grouped series in the Blender finished-art section. Each is linked to its own full-resolution image.
+
+
+## Tattoo Art
+Added a section showing original sketches, tattoo flash artwork, a photograph of the artist working, and selected tattoo results. All assets are stored locally under `assets/`.
+
+## Flail tattoo detail study
+Two additional photographs of the same original tattoo are grouped side-by-side under Tattoo Design & Practice, showing the placement and the closer linework.
+
+
+## Latest updates
+- Motion graphics now stands alone as **Animation & motion work**.
+- The candlelit Blender scene is now under **Cinematic character art → Lighting & composition**, before the character series.
+- Astarion and Juliet behind-the-scenes portraits use centered, uncropped display (object-fit: contain).
+
+### Newly added animation projects
+- Seasonal Tree Animation — `assets/seasonal-tree-animation.mp4` (school project; video muted because no soundtrack is necessary for visual preview).
+- Shape & Sound — `assets/shape-and-sound-animation.mp4` (school project; retains audio).
+- Astarion — Animated Illustration — `assets/astarion-png-animation.mp4` (personal PNG animation).
+- Drawing Process — `assets/drawing-process.mp4` (process recording, paired with the illustration).
+
+The four videos are optimized web-friendly MP4s; original uploads remain with their owner. The portfolio uses manual playback controls so school projects and sound do not unexpectedly autoplay.

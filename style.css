@@ -36,3 +36,96 @@
 .artist-signoff{width:min(100%,390px)}
 .signature-image{display:block;width:min(100%,350px);height:auto;object-fit:contain;margin-top:7px;filter:none}
 @media(max-width:680px){.signature-image{width:min(100%,315px)}}
+
+/* Expanded Blender gallery */
+.project-image.tall{height:auto;aspect-ratio:4/5;background:#0f1712}
+.project-image.tall img{height:100%;object-fit:cover;object-position:center}
+.blender-series .project-meta,.blender-process .project-meta{min-height:122px}
+.project-image.process{height:auto;aspect-ratio:16/10;background:#d9e1d9}
+.project-image.process img{height:100%;object-fit:cover;object-position:center top}
+@media(max-width:1000px){.blender-series{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.blender-series,.blender-process{grid-template-columns:1fr}.project-image.tall{aspect-ratio:4/5}.project-image.process{aspect-ratio:16/10}}
+
+/* Additional Blender studies: keep portrait artwork fully visible */
+.blender-finished .project-image.portrait-contain {height:auto;aspect-ratio:4/5;background:#101014;display:flex;align-items:center;justify-content:center}
+.blender-finished .project-image.portrait-contain img {width:100%;height:100%;object-fit:contain}
+.blender-blue-feature {display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.85fr);margin-top:22px;align-items:center}
+.blender-blue-feature .project-image {height:auto;aspect-ratio:4/5;background:#101014}
+.blender-blue-feature .project-image img {width:100%;height:100%;object-fit:contain}
+.blender-blue-feature .project-meta {padding:clamp(24px,4vw,55px)}
+@media(max-width:680px){.blender-blue-feature{display:block}}
+
+/* The Nightmare: a cohesive three-work cinematic series */
+.nightmare-feature{margin-top:25px}.nightmare-series{align-items:stretch}.nightmare-piece{margin:0;background:#101513;min-width:0;display:flex;flex-direction:column}.nightmare-piece a{display:flex;align-items:center;justify-content:center;flex:1;background:#101513;aspect-ratio:3/4;overflow:hidden}.nightmare-piece img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .25s ease}.nightmare-piece a:hover img,.nightmare-piece a:focus-visible img{transform:scale(1.02)}.nightmare-piece figcaption{color:#eee9dd;letter-spacing:.09em;font-size:12px;text-transform:uppercase;padding:15px 18px;border-top:1px solid #344436}@media(max-width:1000px){.nightmare-series{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:680px){.nightmare-series{grid-template-columns:1fr}.nightmare-piece a{aspect-ratio:3/4}}
+
+/* Tattoo art — original sketches, real-world application and selected finished pieces */
+.tattoo-feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:#edf1ea;align-items:center;margin:22px 0 26px;overflow:hidden}
+.tattoo-hero-photo{display:block;max-height:560px;overflow:hidden;background:#d5ddcf}
+.tattoo-hero-photo img{display:block;width:100%;height:100%;max-height:560px;object-fit:cover;object-position:center 40%}
+.tattoo-feature-copy{padding:clamp(28px,5vw,64px)}
+.tattoo-feature-copy h4{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,4vw,57px);line-height:1.1;font-weight:500;margin:14px 0 20px}
+.tattoo-feature-copy p{color:var(--muted);font-size:15px}
+.tattoo-note{font-size:12px!important;letter-spacing:.02em}
+.tattoo-image{height:440px;display:block;overflow:hidden;background:#e2e5dc}
+.tattoo-image img{height:100%;width:100%;object-fit:contain;transition:transform .3s}
+.tattoo-image:hover img,.tattoo-finished a:hover img{transform:scale(1.025)}
+.tattoo-subheading{margin-top:45px}
+.tattoo-finished figure{background:#f4f5f0;margin:0;min-width:0}
+.tattoo-finished a{height:310px;display:block;overflow:hidden;background:#e4e8e1}
+.tattoo-finished img{width:100%;height:100%;object-fit:contain;transition:transform .3s}
+.tattoo-finished figcaption{font-size:12px;color:var(--muted);padding:14px 18px}
+@media(max-width:800px){.tattoo-feature{grid-template-columns:1fr}.tattoo-hero-photo{max-height:480px}}
+@media(max-width:680px){.tattoo-image{height:350px}.tattoo-finished a{height:370px}}
+
+/* Flail tattoo — paired detail study */
+.tattoo-flail-pair figure{min-width:0;margin:0;background:#f4f5f0}
+.tattoo-flail-pair a{display:flex;align-items:center;justify-content:center;background:#e4e8e1;height:460px;overflow:hidden}
+.tattoo-flail-pair img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .3s}
+.tattoo-flail-pair a:hover img{transform:scale(1.025)}
+.tattoo-flail-pair figcaption{font-size:12px;color:var(--muted);padding:14px 18px}
+@media(max-width:680px){.tattoo-flail-pair a{height:420px}}
+
+/* Portfolio refinements: Motion graphics independent of Blender; featured lighting and centered character process images */
+.motion-work-gallery{grid-template-columns:minmax(0,1fr);max-width:760px}
+.motion-work-gallery .project-image.animated{height:clamp(260px,35vw,420px)}
+.blender-subsection-heading{display:flex;align-items:baseline;gap:20px;margin:38px 0 18px;padding-bottom:11px;border-bottom:1px solid var(--line)}
+.blender-subsection-heading span{color:#69836f;font-size:10px;font-weight:700;letter-spacing:.16em;white-space:nowrap}
+.blender-subsection-heading h4{font-size:clamp(20px,2.4vw,30px);line-height:1.25;letter-spacing:-.03em;margin:0}
+.blender-lighting-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);background:#edf1ea;overflow:hidden}
+.blender-lighting-feature>a{background:#17261b;display:grid;place-items:center;max-height:630px;min-height:350px;overflow:hidden}
+.blender-lighting-feature img{display:block;width:100%;height:100%;max-height:630px;object-fit:contain}
+.blender-lighting-copy{align-self:center;padding:clamp(25px,4vw,58px)}
+.blender-lighting-copy h4{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,3.5vw,52px);line-height:1.15;font-weight:500;margin:15px 0 19px}
+.blender-lighting-copy p{color:var(--muted);font-size:15px}
+/* Show the entire portrait screenshots, keeping model faces centered instead of cropping at the top. */
+.blender-process .project-image.portrait-process{height:400px;aspect-ratio:auto;display:flex;align-items:center;justify-content:center;background:#dde3da;padding:10px}
+.blender-process .project-image.portrait-process img{width:100%;height:100%;object-fit:contain;object-position:center center;transform:none}
+@media(max-width:780px){.blender-lighting-feature{grid-template-columns:1fr}.blender-lighting-feature>a{max-height:550px}.blender-lighting-feature img{max-height:550px}}
+@media(max-width:680px){.blender-subsection-heading{display:block}.blender-subsection-heading h4{margin-top:7px}.blender-process .project-image.portrait-process{height:360px}}
+
+/* More animations — original school and personal projects */
+.animation-subhead{margin:55px 0 22px}.animation-subhead h4{font-size:clamp(24px,3vw,36px);margin:10px 0 6px;line-height:1.2;letter-spacing:-.03em}.animation-subhead p{font-size:14px;color:var(--muted);margin:0}.animation-extra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.animation-extra{overflow:hidden}.animation-video{display:flex;align-items:center;justify-content:center;background:#121b16;overflow:hidden}.animation-video.landscape{aspect-ratio:16/9}.animation-video.portrait{aspect-ratio:4/5}.animation-video video{display:block;width:100%;height:100%;object-fit:contain;background:#121b16}.animation-label{display:block;font-size:10px;letter-spacing:.16em;font-weight:700;color:#58765e;margin-bottom:8px}.animation-extra .project-meta{padding:20px 23px 25px}
+@media(max-width:680px){.animation-extra-grid{grid-template-columns:1fr}.animation-subhead{margin-top:42px}}
+@media print{.animation-extra{break-inside:avoid}.animation-video{max-height:170px}}
+
+/* Final layout polish: pair the motion projects with equal-height media and card captions. */
+.motion-work-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:none;align-items:stretch}
+.motion-work-gallery>.project{display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.motion-work-gallery .project-image.animated,
+.motion-work-gallery .kinetic-preview{height:auto;min-height:0;aspect-ratio:16/10;width:100%;margin:0}
+.motion-work-gallery .project-image.animated{display:grid;place-items:center}
+.motion-work-gallery .project-image.animated img{width:100%;height:100%;object-fit:contain}
+.motion-work-gallery .kinetic-project{display:flex;flex-direction:column;grid-template-columns:none;margin:0}
+.motion-work-gallery .kinetic-preview{display:block;padding:0;flex:0 0 auto}
+.motion-work-gallery .kinetic-player{width:100%;height:100%;object-fit:contain}
+.motion-work-gallery .project-meta{flex:1;padding:23px;align-self:stretch}
+/* The two design cards have matching image footprints and aligned captions. */
+.design-work-gallery{align-items:stretch}
+.design-work-gallery>.project{display:flex;flex-direction:column;min-width:0}
+.design-work-gallery .palette-image,
+.design-work-gallery .icons-grid{height:auto;aspect-ratio:5/4;width:100%;flex:0 0 auto}
+.design-work-gallery .icons-grid{display:flex;align-items:center;justify-content:center;gap:12px;padding:clamp(15px,3vw,42px);background:#d9e1d9}
+.design-work-gallery .icons-grid img{flex:0 1 29%;width:29%;height:auto;max-height:85%;object-fit:contain}
+.design-work-gallery .project-meta{flex:1}
+.design-work-gallery .icon-design-card .project-meta{text-align:center}
+@media(max-width:680px){.motion-work-gallery{grid-template-columns:1fr}.design-work-gallery .icons-grid{gap:8px;padding:18px}}
